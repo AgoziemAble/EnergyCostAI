@@ -8,7 +8,7 @@ const AIAdvisor = ({ userData }) => {
   const [loading, setLoading] = useState(false);
 
   const getAdvice = async () => {
-    if (!userData || !userData.dailyCost) {
+    if (!userData || !userData.totalCost) {
       alert('Please calculate your cost first to get personalized advice!');
       return;
     }
